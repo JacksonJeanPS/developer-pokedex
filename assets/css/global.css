@@ -1,0 +1,293 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #c3c7ced0;
+}
+.pokemon {
+    color: white;
+}
+
+#modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    display: flex;
+}
+
+#abreModal {
+    display: none;
+}
+
+#modal:target {
+    opacity: 1;
+    
+}
+#modal > div {
+    width: 280px;
+    position: relative;
+    margin: 10% auto;
+    padding: 15px 20px;
+    background-image: url('../img/fundo-capa.jpg');
+    border-radius: 1rem;
+}
+
+#modal a {
+    text-decoration: none;
+}
+
+.fechar {
+    position: absolute;
+    width: 40px;
+    right: 0;
+    top: 0;
+    text-align: center;
+    line-height: 24px;
+    margin: 10px 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.modal-title {
+    border-radius: 20px;
+    border-color: #0C69C8;
+}
+
+body div div a img {
+    height: 100%;
+    width: 65%;
+}
+
+.content {
+    padding: 1rem;
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+
+.icon {
+    border-radius: 100%;
+    height: 1.5rem;
+    width: 4rem;
+    margin:auto;
+    transition: 200ms all;
+}
+
+.detail:hover{
+    filter: saturate(200%);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.pagination button:hover{
+    filter: saturate(200%);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.bug-icon {
+    background: #92BC2C;
+    box-shadow: 0 0 20px #a7d834;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    border-radius: 1rem;
+}
+
+.dark-icon {
+    background: #595761;
+    box-shadow: 0 0 20px #595761;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    border-radius: 1rem;
+}
+
+.dragon-icon {
+    background: #0C69C8;
+    box-shadow: 0 0 20px #0C69C8;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    border-radius: 1rem;
+}
+
+.electric-icon {
+    background: #F2D94E;
+    box-shadow: 0 0 20px #ceba4a;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    border-radius: 1rem;
+}
+
+.fire-icon {
+    background: #FBA54C;
+    box-shadow: 0 0 20px #b87a37;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    border-radius: 1rem;
+    
+}
+
+.fairy-icon {
+    background: #EE90E6;
+    box-shadow: 0 0 20px #a763a1;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    border-radius: 1rem;
+}
+
+.fighting-icon {
+    background: #D3425F;
+    box-shadow: 0 0 20px #9e3046;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    border-radius: 1rem;
+}
+
+.flying-icon {
+    background: #A1BBEC;
+    box-shadow: 0 0 20px #6f81a3;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    border-radius: 1rem;
+}
+
+.ghost-icon {
+    background: #5F6DBC;
+    box-shadow: 0 0 20px #4c5796;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    border-radius: 1rem;
+}
+
+.grass-icon {
+    background: #5FBD58;
+    box-shadow: 0 0 20px #458b40;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    border-radius: 1rem;
+
+}
+
+.ground-icon {
+    background: #DA7C4D;
+    box-shadow: 0 0 20px #945333;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    border-radius: 1rem;
+}
+
+.ice-icon {
+    background: #75D0C1;
+    box-shadow: 0 0 20px #539489;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    border-radius: 1rem;
+}
+
+.normal-icon {
+    background: #A0A29F;
+    box-shadow: 0 0 20px #656864;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    border-radius: 1rem;
+}
+
+.poison-icon {
+    background: #B763CF;
+    box-shadow: 0 0 20px #794188;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    border-radius: 1rem;
+}
+
+.psychic-icon {
+    background: #FA8581;
+    box-shadow: 0 0 20px #FA8581;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    border-radius: 1rem;
+}
+
+.rock-icon {
+    background: #C9BB8A;
+    box-shadow: 0 0 20px #C9BB8A;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    border-radius: 1rem;
+}
+
+.steel-icon {
+    background: #5695A3;
+    box-shadow: 0 0 20px #5695A3;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    border-radius: 1rem;
+}
+
+.water-icon {
+    background: #539DDF;
+    box-shadow: 0 0 20px #2e5980;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    border-radius: 1rem;
+}
+
+.text-stats{
+    font-size: 0.9rem; color: rgb(110, 109, 109)
+}
+
+.btnTypes{
+    background-color: none;
+    border-radius: 5px;
+    transition: 0.5s;
+    border: 1px solid white;
+    background-color: rgb(255, 255, 255);
+    margin: 0px 5px;
+}
+
+
+@keyframes bounce {
+    20% {
+        transform: translateY(-6px);
+    }
+    40% {
+        transform: translateY(0px);
+    }
+
+    80% {
+        transform: translateY(-2px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #modal > div {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .content {
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+}
